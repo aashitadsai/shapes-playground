@@ -8,7 +8,14 @@ import {
 } from "@material-ui/core";
 import { ChromePicker } from "react-color";
 import { Shapes } from "./App";
-import { FormSection, Header, AddButton, ShapeDropdown, ColorPickerLabel, ColorPickerWrapper } from "./Style";
+import {
+  FormSection,
+  Header,
+  AddButton,
+  ShapeDropdown,
+  ColorPickerLabel,
+  ColorPickerWrapper,
+} from "./Style";
 
 const AddShapeForm = (props) => {
   const [color, setColor] = useState("#f5f5f5");
@@ -61,12 +68,14 @@ const AddShapeForm = (props) => {
           label="Choose Shape"
         >
           {Object.values(Shapes).map((shape, i) => (
-            <MenuItem value={shape} key={i}>{shape}</MenuItem>
+            <MenuItem value={shape} key={i}>
+              {shape}
+            </MenuItem>
           ))}
         </Select>
       </ShapeDropdown>
       <ColorPickerWrapper>
-        <ColorPickerLabel>Choose Color{" "}</ColorPickerLabel>
+        <ColorPickerLabel>Choose Color </ColorPickerLabel>
         <ChromePicker color={color} onChange={pickColor} disableAlpha={true} />
       </ColorPickerWrapper>
       <TextField
@@ -77,7 +86,12 @@ const AddShapeForm = (props) => {
         defaultValue={title}
         required
       />
-      <AddButton variant="contained" color="primary" onClick={add} disabled={!title}>
+      <AddButton
+        variant="contained"
+        color="primary"
+        onClick={add}
+        disabled={!title}
+      >
         Add
       </AddButton>
     </FormSection>

@@ -1,5 +1,7 @@
 Description - This application allows users to add a shape from given list. Users can modify the shape color and text from the inputs. Users can remove the shape by clicking on it. The application is built using React. Below are the steps to run the application.
 
+Demo Link - https://shapes-playground.vercel.app/
+
 ## Available Scripts
 
 In the project directory, you can run:

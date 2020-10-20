@@ -38,13 +38,13 @@ export const Header = styled(AppBar)`
 export const OutputSection = styled.div`
   flex: 0.7;
   display: block;
-  overflow: scroll; 
+  overflow: scroll;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   border-left: 1px solid #d3d3d3;
   border-radius: 5px;
-//   background-color: #d3d3d33b;
+  //   background-color: #d3d3d33b;
 `;
 
 export const AddButton = styled(Button)`
@@ -60,15 +60,15 @@ export const ColorPickerWrapper = styled.div`
 `;
 
 export const ColorPickerLabel = styled.span`
-    margin-bottom: 10px; 
-    color: #3f51b5;
-    font-size: 16px;
+  margin-bottom: 10px;
+  color: #3f51b5;
+  font-size: 16px;
 `;
 
 export const Footer = styled.span`
-position: fixed !important;
-bottom: 0;
-right: 20px;
-display: block;
-height: 20px;
-`
+  position: fixed !important;
+  bottom: 0;
+  right: 20px;
+  display: block;
+  height: 20px;
+`;
