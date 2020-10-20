@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description - This application allows users to add a shape from given list. Users can modify the shape color and text from the inputs. Users can remove the shape by clicking on it. The application is built using React. Below are the steps to run the application.
 
 ## Available Scripts
 
